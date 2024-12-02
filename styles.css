@@ -8,7 +8,7 @@ body {
   font-family: "Nunito", serif;
 }
 .welcome-header {
-  margin: 40px 20px;
+  margin: 60px 20px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -29,16 +29,32 @@ body {
 
   margin: 100px 30px;
 }
-.login-form input {
+.login-form input:not([type="submit"]) {
   padding: 10px 0px;
   border: none;
-  border-bottom: 1px solid rgb(109, 114, 120);
+  border-bottom: 3px solid rgb(109, 114, 120);
   margin-bottom: 30px;
   font-size: 18px;
+  transition: 1s ease-in-out;
 }
 .login-form__submit {
-  background-color: rgb(250, 225, 0);
+  background-color: rgb(238, 200, 244);
   border: none;
-  margin-top: 50px;
+  margin-top: 40px;
   border-radius: 20px;
+  color: rgb(109, 114, 120);
+  height: 50px;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(213, 143, 196, 0.4);
+}
+.login-form__find {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.login-form input:not([type="submit"]):focus {
+  border-color: rgb(238, 200, 244);
 }
