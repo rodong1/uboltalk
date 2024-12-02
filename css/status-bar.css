@@ -1,0 +1,18 @@
+.status-bar {
+  display: flex;
+  align-items: center;
+  width: 500px;
+}
+
+.status-bar div:first-child {
+  width: 40%;
+  height: 40px;
+}
+.status-bar div:nth-child(2) {
+  width: 40%;
+  height: 40px;
+}
+.status-bar div:last-child {
+  width: 20%;
+  height: 40px;
+}
